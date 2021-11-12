@@ -1,0 +1,21 @@
+<div class="counter-container">
+    <div class="timer-container">
+        <div class="display-counter">
+            <app-display-counter>
+            </app-display-counter>
+        </div>
+        <div class="display-counter1">
+            <app-counter-actions [timerType]="'timer2'">
+            </app-counter-actions>
+        </div>
+    </div>
+
+    <div class="timer-container">
+        <div class="display-counter lower-block">
+            <app-counter-timestamp></app-counter-timestamp>
+        </div>
+        <div class="display-counter1 lower-block">
+            <app-counter-count></app-counter-count>
+        </div>
+    </div>
+</div>

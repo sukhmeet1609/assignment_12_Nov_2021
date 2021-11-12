@@ -1,0 +1,26 @@
+<div class="products-outer-container">
+    <div class="products-container">
+        <div class="header">
+            <div class="icon-container">
+                <div class="grid-view" (click)="changeView(true)"></div>
+                <div class="line"></div>
+                <div class="list-view" (click)="changeView(false)"></div>
+            </div>
+            <select class="drop-down" [(ngModel)]="selectedOption" (change)="selectionChanged($event)">
+                <option selected="selected" value="1">All</option>
+                <option value="2">Less than 100</option>
+                <option value="3">More than 100</option>
+            </select>
+        </div>
+        <div class="inner-products-container">
+            <div [ngClass]="{'tile': gridView, 'tile-list': !gridView}" *ngFor="let product of displayProducts">
+                <div class="inner-tile">
+                    <div>
+                        <div class="product-name">{{ product.name }}</div>
+                        <div class="product-price">{{ product.price }}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

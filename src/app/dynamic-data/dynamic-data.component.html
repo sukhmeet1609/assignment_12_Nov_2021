@@ -1,0 +1,4 @@
+<cdk-virtual-scroll-viewport itemSize="50" class="example-viewport">
+    <div *cdkVirtualFor="let item of items; let i = index" (click)="itemClicked(i)" class="example-item">{{item}}
+    </div>
+</cdk-virtual-scroll-viewport>

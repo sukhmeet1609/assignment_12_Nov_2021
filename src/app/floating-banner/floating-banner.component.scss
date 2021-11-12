@@ -1,0 +1,27 @@
+
+
+.floating-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 1200px;
+    border: 5px solid #000;
+    font-size: 30px;
+}
+
+.inner-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 90%;
+    border: 5px solid #000;
+}
+
+.inner-floating-text{
+    border: 5px solid #000;
+    height: 60px;
+    padding: 17px 0 0 0;
+    text-align: center;
+}

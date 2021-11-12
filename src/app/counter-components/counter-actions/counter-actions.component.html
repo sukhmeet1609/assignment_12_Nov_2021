@@ -1,0 +1,14 @@
+<div class="inner-container">
+    <div>
+        <div class="inner-item">Enter the text limit <input class="counter-input" type="text" [(ngModel)]="inputTime"
+                (blur)="inputBlur($event)"></div>
+        <div class="inner-item button-container">
+            <button class="button" (click)="pauseClick()" *ngIf="isRunning">Start/Pause</button>
+            <button class="button" (click)="restartClick()" *ngIf="!isRunning && !isComplete">Start/Pause</button>
+            <button class="button" (click)="resetClick()">Restart</button>
+        </div>
+        <div class="pause-list">
+            <div *ngFor="let item of pauseData">{{ item }}</div>
+        </div>
+    </div>
+</div>
